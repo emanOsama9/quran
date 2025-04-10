@@ -12,12 +12,13 @@ function App() {
   return <>
         <Nav/>
             <Routes>
- 
-           <Route path='' element={<Home/>}/>
+              
+            <Route path='firstPage' element={<First_page/>}/>
 
+           <Route path='' element={<First_page/>}/>
+ 
              <Route path='home' element={<Home/>}/>
-             <Route path='firstPage' element={<First_page/>}/>
-             <Route path='azkar' element={<Azakr/>}/>
+
 
              <Route path='quran' element={<Quran/>}>
  
