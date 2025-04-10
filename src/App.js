@@ -1,25 +1,62 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Route, Routes } from 'react-router-dom';
+import Home from './component/home/Home';
+import Quran from './component/quranindex/Quran';
+import Nav from './component/Nav/Nav';
+import First_page from './component/first_page/First_page';
+import Azakr from './component/اذكار/Azakr';
+import Azkar_SECTION from './component/azkarSection/Azkar_SECTION';
+ 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  return <>
+        <Nav/>
+            <Routes>
+ 
+           <Route path='' element={<Home/>}/>
+
+             <Route path='home' element={<Home/>}/>
+             <Route path='firstPage' element={<First_page/>}/>
+             <Route path='azkar' element={<Azakr/>}/>
+
+             <Route path='quran' element={<Quran/>}>
+ 
+             
+                          <Route path=':number' element={<Quran/>}/>
+
+             
+             
+             
+             
+             
+             
+             </Route>
+
+            
+            
+             <Route path='azkar_section' element={<Azkar_SECTION/>}>
+ 
+             
+             <Route path=':id' element={<Azkar_SECTION/>}/>
+
+             
+             
+             
+             
+             
+             
+             </Route>
+
+            
+            
+            
+            
+            
+            </Routes>  
+ 
+  
+  </>
+    
+ }
 
 export default App;
