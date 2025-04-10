@@ -31,14 +31,14 @@ export function Nav() {
 
                     
                     </ul> 
-                  <ul className=' ms-auto flex gap-11'>
+                  <ul className=' ms-auto flex gap-11 '>
           
-            <Link to="home"><li>Quran</li></Link>
+            <Link to="home "className=' hover:underline'><li>Quran</li></Link>
 
-           <Link to="quran"><li>Details </li></Link>
-           <Link to="firstpage"><li>Home</li></Link>
+           <Link to="quran"className=' hover:underline'><li>Details </li></Link>
+           <Link to="firstpage"className=' hover:underline'><li>Home</li></Link>
 
-           <Link to="azkar"><li>Azkar</li></Link>
+           <Link to="azkar"className=' hover:underline'><li>Azkar</li></Link>
 
                    </ul>
 
