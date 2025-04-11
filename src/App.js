@@ -38,7 +38,7 @@ function App() {
              <Route path='azkar_section' element={<Azkar_SECTION/>}>
  
              
-             <Route path=':id' element={<Azkar_SECTION/>}/>
+                  <Route path=':id' element={<Azkar_SECTION/>}/>
 
              
              
@@ -48,7 +48,7 @@ function App() {
              
              </Route>
 
-            
+            <Route path='azkar' element={<Azakr/>}/>
             
             
             
